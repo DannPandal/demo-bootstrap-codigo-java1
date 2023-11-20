@@ -1,0 +1,10 @@
+
+.card-product-custom {
+    max-height: 100px;
+    
+    height: 100px;
+}
+
+.card-product-custom > img{
+    width: 150px;
+}

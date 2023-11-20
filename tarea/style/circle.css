@@ -1,0 +1,17 @@
+
+.circle{
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.circle:hover{
+    background-color: #ffe100;
+}
+
+.circle.active{
+    background-color: #ffef7a !important;
+    
+}
