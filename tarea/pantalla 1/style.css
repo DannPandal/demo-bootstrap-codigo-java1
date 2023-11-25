@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,7 +19,7 @@ header {
   font-size: 1.25rem;
 }
 .contenedor--nombre--restaurante p span {
-  color: rgb(239, 239, 5);
+  color: #ffc107;
   font-size: 1.25rem;
 }
 
@@ -73,7 +73,8 @@ svg {
 }
 
 .card--container {
-  @us justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
 }
 .card--container__card {
@@ -91,4 +92,83 @@ svg {
 }
 .card--container__card p {
   width: 75%;
+}
+
+/* Pantalla de 768px en adelante version laptop*/
+@media screen and (min-width: 768px) {
+  header {
+    padding: 15px;
+    align-items: center;
+  }
+  .contenedor--nombre--restaurante p {
+    font-weight: 500;
+    font-size: 1.35rem;
+  }
+  .contenedor--login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+  }
+  .contenedor--login svg {
+    margin-top: 0;
+  }
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section:first-child {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section:first-child img {
+    width: 100%;
+    max-width: 850px;
+    position: relative;
+  }
+  main section:first-child :nth-child(2) {
+    position: absolute;
+    margin-left: calc((100% - 800px) / 2);
+  }
+  main section:first-child :nth-child(2) p {
+    margin-left: auto;
+  }
+  .hero__contenedor__botones {
+    max-width: 850px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero__contenedor__botones__boton {
+    padding: 0.5rem 0.9rem;
+    font-size: smaller;
+  }
+  .card--container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80vw;
+  }
+  .card--container__card {
+    max-width: 300px;
+    min-height: 70px;
+    border: 1px solid rgba(72, 72, 72, 0.463);
+  }
+  .card--container__card img {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .card--container__card:last-child {
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
